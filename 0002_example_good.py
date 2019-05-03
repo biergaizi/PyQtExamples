@@ -41,14 +41,6 @@ class ExampleWindow(QtGui.QWidget):
 
         self.show()
 
-    def define_thread(self):
-        # 在这里定义线程。函数名是任意起的，只要在 __init__() 里调用即可。
-
-        # group 参数必须制定，但不使用，填写 None。
-        # target 参数是欲在线程中执行的函数对象。
-        # args 是一个 Python 列表，指定参数。这里没有参数，故不使用。
-        self.download_thread = threading.Thread(group=None, target=self.download)
-
     def download_start(self):
         # 正确的操作：当图形界面需要进行耗时代码时，应该启动一个独立的
         # Python 线程。这个线程独立于图形界面代码工作，因此不会造成假死。
