@@ -8,7 +8,6 @@ from PyQt4 import QtCore, QtGui
 # 创建一个实例窗口
 class ExampleWindow(QtGui.QWidget):
 
-    # 下载按钮
     def __init__(self, parent=None):
         super().__init__(parent)
 
