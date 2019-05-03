@@ -11,7 +11,6 @@ class ExampleWindow(QtGui.QWidget):
     # 创建自定义「下载完成」信号
     download_finished_signal = QtCore.pyqtSignal()
 
-    # 下载按钮
     def __init__(self, parent=None):
         super().__init__(parent)
 
