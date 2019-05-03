@@ -101,7 +101,7 @@ class ExampleWindow(QtGui.QWidget):
     # 这是一个带参数的 pyqtSlot. 类型必须与信号的声明一致。
     @QtCore.pyqtSlot(int)
     def download_progress(self, progress):
-        # 更好的方法是使用字符串格式化，类似 C 的 printf
+        # 使用字符串格式化，类似 C 的 printf
         self.label1.setText("Progress: %d%%" % (progress))
 
         # 相当于
